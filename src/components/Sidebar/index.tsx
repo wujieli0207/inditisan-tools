@@ -13,7 +13,7 @@ const Sidebar: FC<IProps> = ({ navigation, currentNav, onNavItemClicked }) => {
   return (
     <nav className="w-full h-full border-r bg-white space-y-8 sm:w-60">
       <div className="flex flex-col h-full">
-        <div className="h-20 flex items-center justify-center">
+        <div className="h-12 flex items-center justify-center mb-2">
           <IconBulb width={30} height={30} className="text-sky-500 mr-1" />
           <span className="text-black font-bold text-xl font-sans">
             Inditisan Tools
