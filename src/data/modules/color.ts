@@ -1,9 +1,10 @@
-import { LayersIcon } from '@radix-ui/react-icons'
+import { IconPalette } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const color: ICatagory = {
+  key: 'color',
   title: '配色',
-  icon: LayersIcon,
+  icon: IconPalette,
   href: '',
   cards: [
     {

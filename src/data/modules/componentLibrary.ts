@@ -1,15 +1,17 @@
-import { LayersIcon } from '@radix-ui/react-icons'
+import { IconComponents } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const componentLibrary: ICatagory = {
+  key: 'component-library',
   title: '组件库',
-  icon: LayersIcon,
+  icon: IconComponents,
   href: '',
   cards: [
     {
-      title: 'daisyUI',
+      title: 'DaisyUI',
       url: 'https://daisyui.com/',
       icon: 'https://icon.horse/icon/daisyui.com',
+      description: '目前最受欢迎的 Tailwind 组件库',
     },
     {
       title: 'FloatUI',

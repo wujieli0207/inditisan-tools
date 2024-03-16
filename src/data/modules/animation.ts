@@ -1,15 +1,17 @@
-import { LayersIcon } from '@radix-ui/react-icons'
+import { IconEaseInOutControlPoints } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const animation: ICatagory = {
+  key: 'animation',
   title: '动画',
-  icon: LayersIcon,
+  icon: IconEaseInOutControlPoints,
   href: '',
   cards: [
     {
       title: 'Lottie',
       url: 'https://lottiefiles.com/',
       icon: 'https://icon.horse/icon/lottiefiles.com',
+      description: '支持渲染 AE 动画的高性能动画库',
     },
     {
       title: 'auto-animate',

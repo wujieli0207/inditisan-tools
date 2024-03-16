@@ -1,9 +1,10 @@
-import { LayersIcon } from '@radix-ui/react-icons'
+import { IconLink } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const domin: ICatagory = {
+  key: 'domin',
   title: '域名',
-  icon: LayersIcon,
+  icon: IconLink,
   href: '',
   cards: [
     {

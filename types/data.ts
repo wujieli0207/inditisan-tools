@@ -1,3 +1,4 @@
+import { Icon, IconProps } from '@tabler/icons-react'
 import { ForwardRefExoticComponent, RefAttributes } from 'react'
 
 export interface ICard {
@@ -8,8 +9,9 @@ export interface ICard {
 }
 
 export interface ICatagory {
+  key: string
   title: string
-  icon: ForwardRefExoticComponent<RefAttributes<SVGSVGElement>>
+  icon: ForwardRefExoticComponent<Omit<IconProps, 'ref'> & RefAttributes<Icon>>
   href: ''
   cards: ICard[]
 }
