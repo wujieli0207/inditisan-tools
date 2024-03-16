@@ -1,6 +1,7 @@
 'use client'
 
 import Catagory from '@/src/components/Catagory'
+import Navbar from '@/src/components/Navbar'
 import Sidebar from '@/src/components/Sidebar'
 import data from '@/src/data'
 import { useRef, useState } from 'react'
@@ -23,17 +24,20 @@ export default function Home() {
         onNavItemClicked={handleNavItemClick}
       />
 
-      <div className="w-full overflow-auto">
-        {data.map((item) => {
-          return (
-            <div
-              key={item.title}
-              ref={(el) => (categoryRefs.current[item.key] = el!)}
-            >
-              <Catagory title={item.title} cardList={item.cards} />
-            </div>
-          )
-        })}
+      <div className="flex flex-col w-full">
+        <Navbar />
+        <div className="w-full overflow-auto">
+          {data.map((item) => {
+            return (
+              <div
+                key={item.title}
+                ref={(el) => (categoryRefs.current[item.key] = el!)}
+              >
+                <Catagory title={item.title} cardList={item.cards} />
+              </div>
+            )
+          })}
+        </div>
       </div>
     </main>
   )
