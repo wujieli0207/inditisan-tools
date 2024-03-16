@@ -8,6 +8,19 @@ const componentLibrary: ICatagory = {
   href: '',
   cards: [
     {
+      title: 'tailwindcss',
+      url: 'https://tailwindcss.com/',
+      icon: 'https://icon.horse/icon/tailwindcss.com',
+      description: '原子化 css 样式库',
+    },
+    {
+      title: 'tailwindcomponents',
+      url: 'https://tailwindcomponents.com/',
+      icon: 'https://icon.horse/icon/tailwindcomponents.com',
+      description: '免费的 Tailwind 社区组件库',
+    },
+
+    {
       title: 'DaisyUI',
       url: 'https://daisyui.com/',
       icon: 'https://icon.horse/icon/daisyui.com',
