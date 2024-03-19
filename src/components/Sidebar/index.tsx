@@ -28,9 +28,9 @@ const Sidebar: FC<IProps> = ({ navigation, currentNav, onNavItemClicked }) => {
                     currentNav === item.key ? 'bg-gray-100' : ''
                   }`}
                 >
-                  <div className="text-gray-500">
+                  {/* <div className="text-gray-500">
                     <item.icon stroke={2} size={16} />
-                  </div>
+                  </div> */}
                   {item.title}
                 </a>
               </li>
