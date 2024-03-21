@@ -1,10 +1,8 @@
-import { IconEaseInOutControlPoints } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const animation: ICatagory = {
   key: 'animation',
   title: '动画',
-  icon: IconEaseInOutControlPoints,
   href: '',
   cards: [
     {

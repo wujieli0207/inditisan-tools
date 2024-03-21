@@ -1,10 +1,8 @@
-import { IconLink } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const domin: ICatagory = {
   key: 'domin',
   title: '域名',
-  icon: IconLink,
   href: '',
   cards: [
     {

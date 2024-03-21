@@ -1,10 +1,8 @@
-import { IconPalette } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const color: ICatagory = {
   key: 'color',
   title: '配色',
-  icon: IconPalette,
   href: '',
   cards: [
     {

@@ -1,10 +1,8 @@
-import { IconLink } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const frontEnd: ICatagory = {
   key: 'frontEnd',
   title: '前端',
-  icon: IconLink,
   href: '',
   cards: [
     {

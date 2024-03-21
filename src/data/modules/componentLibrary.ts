@@ -1,10 +1,8 @@
-import { IconComponents } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 
 const componentLibrary: ICatagory = {
   key: 'component-library',
   title: '组件库',
-  icon: IconComponents,
   href: '',
   cards: [
     {

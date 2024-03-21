@@ -10,8 +10,8 @@ interface IProps {
 
 const Catagory: FC<IProps> = ({ title, cardList }) => {
   return (
-    <section className="max-w-screen-xl px-4 mx-auto mt-3 mb-4 md:px-8">
-      <div className="flex flex-col">
+    <section className="max-w-screen-xl px-4 mx-auto my-4 md:px-8">
+      <div className="flex flex-col mb-12">
         <h2 className="text-2xl font-bold text-black">{title}</h2>
 
         <div className="grid grid-cols-2 gap-4 mt-4 md:grid-cols-3 lg:grid-cols-4">
