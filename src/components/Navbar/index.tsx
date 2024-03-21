@@ -1,4 +1,8 @@
-import { IconBrandGithub, IconSun } from '@tabler/icons-react'
+import {
+  IconBrandGithub,
+  IconSun,
+  IconLayoutSidebarLeftExpand,
+} from '@tabler/icons-react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -46,24 +50,34 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white border-b h-12 flex justify-end ">
-      {/* dark / light */}
-      <button
-        className="my-2 mx-1 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg "
-        onClick={toggleTheme}
-      >
-        <IconSun width={18} height={18} />
-      </button>
-
-      {/* github */}
-      <Link
-        href="https://github.com/wujieli0207/inditisan-tools"
-        target="_blank"
-      >
-        <button className="my-2 mx-1 mr-3 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg">
-          <IconBrandGithub width={18} height={18} />
+    <nav className="bg-white border-b h-12 flex justify-between ">
+      <div>
+        {/* toggle sidebar */}
+        <div className="my-2 ml-3 mx-1 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg lg:hidden">
+          <label htmlFor="sidebar-drawer">
+            <IconLayoutSidebarLeftExpand width={18} height={18} />
+          </label>
+        </div>
+      </div>
+      <div>
+        {/* dark / light */}
+        <button
+          className="my-2 mx-1 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg "
+          onClick={toggleTheme}
+        >
+          <IconSun width={18} height={18} />
         </button>
-      </Link>
+
+        {/* github */}
+        <Link
+          href="https://github.com/wujieli0207/inditisan-tools"
+          target="_blank"
+        >
+          <button className="my-2 mx-1 mr-3 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg">
+            <IconBrandGithub width={18} height={18} />
+          </button>
+        </Link>
+      </div>
     </nav>
   )
 }

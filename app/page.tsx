@@ -22,23 +22,23 @@ export default function Home() {
         navigation={data}
         currentNav={currentNav}
         onNavItemClicked={handleNavItemClick}
-      />
-
-      <div className="flex flex-col w-full">
-        <Navbar />
-        <div className="w-full overflow-auto">
-          {data.map((item) => {
-            return (
-              <div
-                key={item.title}
-                ref={(el) => (categoryRefs.current[item.key] = el!)}
-              >
-                <Catagory title={item.title} cardList={item.cards} />
-              </div>
-            )
-          })}
+      >
+        <div className="flex flex-col w-full">
+          <Navbar />
+          <div className="w-full overflow-auto">
+            {data.map((item) => {
+              return (
+                <div
+                  key={item.title}
+                  ref={(el) => (categoryRefs.current[item.key] = el!)}
+                >
+                  <Catagory title={item.title} cardList={item.cards} />
+                </div>
+              )
+            })}
+          </div>
         </div>
-      </div>
+      </Sidebar>
     </main>
   )
 }
