@@ -9,6 +9,18 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Inditisan Tools',
   description: 'Great Tools for Independent Developer',
+  keywords: [
+    'tools',
+    'resources',
+    'developer',
+    'independant',
+    'freelancer',
+    'solo',
+    'self-employed',
+    'efficiency',
+    'time-saving',
+    'enhancement',
+  ],
 }
 
 export default function RootLayout({
