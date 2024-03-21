@@ -32,6 +32,24 @@ const componentLibrary: ICatagory = {
       icon: 'https://icon.horse/icon/floatui.com',
       description: '适合搭建产品介绍主页的组件库',
     },
+    {
+      title: 'Mantine UI',
+      url: 'https://mantine.dev/',
+      icon: 'https://icon.horse/icon/mantine.dev',
+      description: '',
+    },
+    {
+      title: 'shadcn/ui',
+      url: 'https://ui.shadcn.com/',
+      icon: 'https://icon.horse/icon/ui.shadcn.com',
+      description: '',
+    },
+    {
+      title: 'radix-ui',
+      url: 'https://www.radix-ui.com/',
+      icon: 'https://icon.horse/icon/www.radix-ui.com',
+      description: '',
+    },
   ],
 }
 

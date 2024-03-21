@@ -37,6 +37,12 @@ const animation: ICatagory = {
       icon: 'https://icon.horse/icon/ui.aceternity.com',
       description: '非常多炫酷的特效，适合用在展示型网站',
     },
+    {
+      title: 'Motion',
+      url: 'https://www.framer.com/motion/',
+      icon: 'https://icon.horse/icon/www.framer.com',
+      description: '通过组件快速实现复杂动画和交互',
+    },
   ],
 }
 
