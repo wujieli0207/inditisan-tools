@@ -14,7 +14,7 @@ const Catagory: FC<IProps> = ({ title, cardList }) => {
       <div className="flex flex-col mb-12">
         <h2 className="text-2xl font-bold text-black">{title}</h2>
 
-        <div className="grid grid-cols-2 gap-4 mt-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {cardList.map((card) => {
             return (
               <Link href={card.url} target="_blank" key={card.title}>
