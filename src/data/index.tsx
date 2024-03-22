@@ -2,7 +2,9 @@ import { ICatagory } from '@/types/data'
 import animation from './modules/animation'
 import color from './modules/color'
 import componentLibrary from './modules/componentLibrary'
-import icon from './modules/icon'
+import icon from './modules/design/icon'
+import picture from './modules/design/picture'
+import designMethod from './modules/design/designMethod'
 import domain from './modules/domain'
 import frontEnd from './modules/frontEnd'
 import backEnd from './modules/backEnd'
@@ -17,6 +19,8 @@ const data: ICatagory[] = [
   animation,
   color,
   icon,
+  picture,
+  designMethod,
   deploy,
   domain,
   seo,

@@ -12,7 +12,7 @@ const icon: ICatagory = {
       description: '可以用来设计app图标',
     },
     {
-      title: 'iconce',
+      title: 'Icon Horse',
       url: 'https://icon.horse/',
       icon: 'https://icon.horse/icon/icon.horse',
       description: '获取网站的 favicon',
