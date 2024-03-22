@@ -50,10 +50,10 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white border-b h-12 flex justify-between ">
+    <nav className="bg-white border-b h-12 flex justify-between items-center">
       <div>
         {/* toggle sidebar */}
-        <div className="my-2 ml-3 mx-1 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg lg:hidden">
+        <div className="my-2 ml-3 mx-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100 lg:hidden">
           <label htmlFor="sidebar-drawer">
             <IconLayoutSidebarLeftExpand width={18} height={18} />
           </label>
@@ -62,7 +62,7 @@ const Navbar = () => {
       <div>
         {/* dark / light */}
         <button
-          className="my-2 mx-1 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg "
+          className="my-2 mx-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100"
           onClick={toggleTheme}
         >
           <IconSun width={18} height={18} />
@@ -73,7 +73,7 @@ const Navbar = () => {
           href="https://github.com/wujieli0207/inditisan-tools"
           target="_blank"
         >
-          <button className="my-2 mx-1 mr-3 p-1 text-sm text-gray-700 duration-100 border rounded-lg hover:border-sky-500 active:shadow-lg">
+          <button className="my-2 mx-1 mr-3 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100">
             <IconBrandGithub width={18} height={18} />
           </button>
         </Link>
