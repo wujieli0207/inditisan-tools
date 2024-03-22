@@ -5,24 +5,17 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import GoogleAnalytics from './GoogleAnalytics'
 import BaiDuAnalytics from './BaiDuAnalytics'
+import { siteConfig } from '@/config/site'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Inditisan Tools',
-  description: 'Great Tools for Independent Developer',
-  keywords: [
-    'tools',
-    'resources',
-    'developer',
-    'independant',
-    'freelancer',
-    'solo',
-    'self-employed',
-    'efficiency',
-    'time-saving',
-    'enhancement',
-  ],
+  title: siteConfig.name,
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  openGraph: siteConfig.openGraph,
 }
 
 export default function RootLayout({
