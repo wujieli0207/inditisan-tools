@@ -25,18 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
-        {process.env.NODE_ENV === 'development' ? (
-          <></>
-        ) : (
-          <>
-            <meta
-              name="google-adsense-account"
-              content={process.env.NEXT_PUBLIC_GOOGLE_ADENSE}
-            />
-          </>
-        )}
-      </header>
+      {process.env.NODE_ENV === 'development' ? (
+        <></>
+      ) : (
+        <header>
+          <meta
+            name="google-adsense-account"
+            content={process.env.NEXT_PUBLIC_GOOGLE_ADENSE}
+          />
+        </header>
+      )}
 
       <body className={inter.className}>
         {children}

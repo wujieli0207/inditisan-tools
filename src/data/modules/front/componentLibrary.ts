@@ -25,20 +25,20 @@ const componentLibrary: ICatagory = {
     {
       title: 'Mantine UI',
       url: 'https://mantine.dev/',
-      icon: 'https://icon.horse/icon/mantine.dev',
-      description: '',
+      icon: '/icon/mantine.svg',
+      description: '以开发者体验为首要目标的高质量 React 组件库',
     },
     {
       title: 'shadcn/ui',
       url: 'https://ui.shadcn.com/',
       icon: 'https://icon.horse/icon/ui.shadcn.com',
-      description: '',
+      description: '用于构建用户界面的现代化，功能丰富的 UI 库',
     },
     {
       title: 'radix-ui',
       url: 'https://www.radix-ui.com/',
       icon: 'https://icon.horse/icon/www.radix-ui.com',
-      description: '',
+      description: '提供一套原始组件，用于构建完全自定义的设计系统',
     },
   ],
 }

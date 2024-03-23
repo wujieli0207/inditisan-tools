@@ -8,7 +8,7 @@ const frontFramework: ICatagory = {
       title: 'React',
       url: 'https://react.dev/',
       icon: 'https://icon.horse/icon/react.dev',
-      description: 'React',
+      description: 'React 框架',
     },
     {
       title: 'Next.js',
@@ -19,8 +19,8 @@ const frontFramework: ICatagory = {
     {
       title: 'Vue',
       url: 'https://vuejs.org/',
-      icon: 'https://icon.horse/icon/vuejs.org',
-      description: 'Vue',
+      icon: '/icon/vue.svg',
+      description: 'Vue 框架',
     },
     {
       title: 'Nuxt',
