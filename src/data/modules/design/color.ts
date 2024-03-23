@@ -17,7 +17,7 @@ const color: ICatagory = {
       description: '可以直观的看到各种配色效果',
     },
     {
-      title: 'palettemaker',
+      title: 'Happy Hues',
       url: 'https://www.happyhues.co',
       icon: 'https://icon.horse/icon/www.happyhues.co',
       description: '直接在网站看配色效果',
