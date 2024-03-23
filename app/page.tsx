@@ -25,7 +25,7 @@ export default function Home() {
       >
         <div className="flex flex-col w-full">
           <Navbar />
-          <div className="w-full overflow-auto">
+          <div className="w-full overflow-auto mt-12">
             {data.map((item) => {
               return (
                 <div
