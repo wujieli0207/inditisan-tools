@@ -1,14 +1,15 @@
-import { ICard } from '@/types/data'
+import { ICard, ICatagory } from '@/types/data'
 import { FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 interface IProps {
-  title: string
-  cardList: ICard[]
+  catagory: ICatagory
 }
 
-const Catagory: FC<IProps> = ({ title, cardList }) => {
+const Catagory: FC<IProps> = ({ catagory }) => {
+  const { title, cards: cardList } = catagory
+
   return (
     <section className="max-w-screen-xl px-4 mx-auto my-4 md:px-8">
       <div className="flex flex-col mb-12">

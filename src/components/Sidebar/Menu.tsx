@@ -1,5 +1,5 @@
 import { ICatagory } from '@/types/data'
-import { FC, ReactNode, useState } from 'react'
+import { FC, ReactNode, useEffect, useState } from 'react'
 
 interface IProps {
   children: ReactNode
@@ -14,7 +14,14 @@ const Menu: FC<IProps> = ({
   currentNav,
   onNavItemClicked,
 }) => {
-  const [isOpened, setIsOpened] = useState(false)
+  const [isOpened, setIsOpened] = useState(
+    items.some((item) => item.key === currentNav)
+  )
+
+  useEffect(() => {
+    // 每当currentNav变化时，检查是否需要展开或收起菜单
+    setIsOpened(items.some((item) => item.key === currentNav))
+  }, [currentNav, items])
 
   return (
     <>

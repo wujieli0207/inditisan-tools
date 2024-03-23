@@ -4,11 +4,13 @@ import Catagory from '@/src/components/Catagory'
 import Navbar from '@/src/components/Navbar'
 import Sidebar from '@/src/components/Sidebar'
 import data from '@/src/data'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
-  const [currentNav, setCurrentNav] = useState(data[0].key)
-  const categoryRefs = useRef<Record<string, HTMLDivElement>>({}) // Store refs for each category
+  const [currentNav, setCurrentNav] = useState(
+    data[0].children && data[0].children[0] ? data[0].children[0].key : ''
+  )
+  const categoryRefs = useRef<Record<string, HTMLDivElement>>({})
 
   const handleNavItemClick = (key: string) => {
     setCurrentNav(key)
@@ -28,18 +30,18 @@ export default function Home() {
         <div className="flex flex-col w-full">
           <Navbar />
 
-          <div className="w-full overflow-auto mt-12">
+          <div className="overflow-auto">
             {data.map((item) => {
               return (
                 <div key={item.key}>
                   {/* 分类 */}
-                  {item.children?.map((el) => {
+                  {item.children?.map((catagory) => {
                     return (
                       <div
-                        key={el.key}
-                        ref={(e) => (categoryRefs.current[el.key] = e!)}
+                        key={catagory.key}
+                        ref={(e) => (categoryRefs.current[catagory.key] = e!)}
                       >
-                        <Catagory title={el.title} cardList={el.cards} />
+                        <Catagory catagory={catagory} />
                       </div>
                     )
                   })}
