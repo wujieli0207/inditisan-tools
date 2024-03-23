@@ -1,6 +1,3 @@
-import { Icon, IconProps } from '@tabler/icons-react'
-import { ForwardRefExoticComponent, RefAttributes } from 'react'
-
 export interface ICard {
   title: string
   url: string
