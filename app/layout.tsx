@@ -6,7 +6,6 @@ import './globals.css'
 import GoogleAnalytics from './GoogleAnalytics'
 import BaiDuAnalytics from './BaiDuAnalytics'
 import { siteConfig } from '@/config/site'
-import GoogleAdense from './GoogleAdense'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,8 +25,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics />
-      <SpeedInsights />
+      <header>
+        {process.env.NODE_ENV === 'development' ? (
+          <></>
+        ) : (
+          <>
+            <meta
+              name="google-adsense-account"
+              content={process.env.NEXT_PUBLIC_GOOGLE_ADENSE}
+            />
+          </>
+        )}
+      </header>
+
       <body className={inter.className}>
         {children}
 
@@ -35,9 +45,10 @@ export default function RootLayout({
           <></>
         ) : (
           <>
+            <Analytics />
+            <SpeedInsights />
             <BaiDuAnalytics />
             <GoogleAnalytics />
-            <GoogleAdense />
           </>
         )}
       </body>
