@@ -6,6 +6,7 @@ import './globals.css'
 import GoogleAnalytics from './GoogleAnalytics'
 import BaiDuAnalytics from './BaiDuAnalytics'
 import { siteConfig } from '@/config/site'
+import GoogleAdense from './GoogleAdense'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,6 +37,7 @@ export default function RootLayout({
           <>
             <BaiDuAnalytics />
             <GoogleAnalytics />
+            <GoogleAdense />
           </>
         )}
       </body>
