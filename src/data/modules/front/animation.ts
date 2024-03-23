@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const animation: ICatagory = {
   key: 'animation',
   title: '动画',
-  href: '',
   cards: [
     {
       title: 'Lottie',

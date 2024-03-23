@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const icon: ICatagory = {
   key: 'icon',
   title: '图标',
-  href: '',
   cards: [
     {
       title: 'iconce',

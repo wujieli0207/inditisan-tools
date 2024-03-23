@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const domin: ICatagory = {
   key: 'domin',
   title: '域名',
-  href: '',
   cards: [
     {
       title: 'namecheap',

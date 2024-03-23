@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const picture: ICatagory = {
   key: 'picture',
   title: '图片',
-  href: '',
   cards: [
     {
       title: 'Unsplash',

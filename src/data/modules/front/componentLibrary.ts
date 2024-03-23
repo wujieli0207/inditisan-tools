@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const componentLibrary: ICatagory = {
   key: 'component-library',
   title: '组件库',
-  href: '',
   cards: [
     {
       title: 'tailwindcss',

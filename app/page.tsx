@@ -29,10 +29,19 @@ export default function Home() {
             {data.map((item) => {
               return (
                 <div
-                  key={item.title}
+                  key={item.key}
                   ref={(el) => (categoryRefs.current[item.key] = el!)}
                 >
-                  <Catagory title={item.title} cardList={item.cards} />
+                  {/* 分类 */}
+                  {item.children?.map((el) => {
+                    return (
+                      <Catagory
+                        key={el.key}
+                        title={el.title}
+                        cardList={el.cards}
+                      />
+                    )
+                  })}
                 </div>
               )
             })}

@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const information: ICatagory = {
   key: 'information',
   title: '信息源',
-  href: '',
   cards: [
     {
       title: 'Product Hunt',

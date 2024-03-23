@@ -50,7 +50,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-white border-b h-12 flex justify-between items-center">
+    <nav className="bg-white border-b h-12 flex justify-between items-center fixed top-0 right-0 left-0">
       <div>
         {/* toggle sidebar */}
         <div className="my-2 ml-3 mx-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100 lg:hidden">

@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const deploy: ICatagory = {
   key: 'deploy',
   title: '服务部署',
-  href: '',
   cards: [
     {
       title: 'vercel',

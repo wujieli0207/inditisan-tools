@@ -1,9 +1,8 @@
 import { ICatagory } from '@/types/data'
 
-const frontEnd: ICatagory = {
-  key: 'frontEnd',
-  title: '前端',
-  href: '',
+const frontFramework: ICatagory = {
+  key: 'frontFramework',
+  title: '前端开发框架',
   cards: [
     {
       title: 'React',
@@ -32,4 +31,4 @@ const frontEnd: ICatagory = {
   ],
 }
 
-export default frontEnd
+export default frontFramework

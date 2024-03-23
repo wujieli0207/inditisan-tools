@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const designMethod: ICatagory = {
   key: 'designMethod',
   title: '设计方法',
-  href: '',
   cards: [
     {
       title: 'DesignSystemHunt',

@@ -1,9 +1,8 @@
 import { ICatagory } from '@/types/data'
 
-const backEnd: ICatagory = {
-  key: 'backEnd',
-  title: '服务端',
-  href: '',
+const backFramework: ICatagory = {
+  key: 'backFramework',
+  title: '服务端开发框架',
   cards: [
     {
       title: 'NestJS',
@@ -26,4 +25,4 @@ const backEnd: ICatagory = {
   ],
 }
 
-export default backEnd
+export default backFramework

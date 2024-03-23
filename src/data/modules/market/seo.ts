@@ -4,7 +4,6 @@ import { ICatagory } from '@/types/data'
 const seo: ICatagory = {
   key: 'SEO',
   title: 'SEO',
-  href: '',
   cards: [
     {
       title: 'LearningSEO',
