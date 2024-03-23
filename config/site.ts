@@ -2,22 +2,21 @@ import { SiteConfig } from '@/types/siteConfig'
 
 const baseSiteConfig = {
   name: 'Inditisan Tools',
-  description: 'Great Tools for Independent Developer.',
+  description:
+    'Inditisan Tools：独立开发者的宝库，聚合全网独立开发技术栈、工具箱、资源和社区，助您在独立开发的旅程上更加顺畅',
   url: 'https://www.inditisan.com',
-  ogImage: 'https://smartexcel.cc/og.jpg',
-  metadataBase: new URL('https://www.smartexcel.cc'),
+  ogImage: 'https://www.inditisan.com/og.jpg',
+  metadataBase: new URL('https://www.inditisan.com'),
   keywords: [
-    'tools',
-    'resources',
-    'developer',
-    'independant',
-    'freelancer',
-    'solo',
-    'self-employed',
-    'efficiency',
-    'time-saving',
-    'enhancement',
+    '独立开发',
+    '独立开发者',
+    '独立开发技术栈',
+    '独立开发资源',
+    '独立开发者工具',
+    '独立开发者社区',
+    '独立开发者出海',
   ],
+
   authors: [
     {
       name: 'wujieli',
