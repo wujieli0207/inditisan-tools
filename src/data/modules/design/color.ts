@@ -3,7 +3,6 @@ import { ICatagory } from '@/types/data'
 const color: ICatagory = {
   key: 'color',
   title: '配色',
-  href: '',
   cards: [
     {
       title: 'AI Colors',
