@@ -13,7 +13,9 @@ export default function Home() {
   const handleNavItemClick = (key: string) => {
     setCurrentNav(key)
 
-    categoryRefs.current[key].scrollIntoView({ behavior: 'smooth' })
+    categoryRefs.current[key].scrollIntoView({
+      behavior: 'smooth',
+    })
   }
 
   return (
@@ -25,21 +27,20 @@ export default function Home() {
       >
         <div className="flex flex-col w-full">
           <Navbar />
+
           <div className="w-full overflow-auto mt-12">
             {data.map((item) => {
               return (
-                <div
-                  key={item.key}
-                  ref={(el) => (categoryRefs.current[item.key] = el!)}
-                >
+                <div key={item.key}>
                   {/* 分类 */}
                   {item.children?.map((el) => {
                     return (
-                      <Catagory
+                      <div
                         key={el.key}
-                        title={el.title}
-                        cardList={el.cards}
-                      />
+                        ref={(e) => (categoryRefs.current[el.key] = e!)}
+                      >
+                        <Catagory title={el.title} cardList={el.cards} />
+                      </div>
                     )
                   })}
                 </div>

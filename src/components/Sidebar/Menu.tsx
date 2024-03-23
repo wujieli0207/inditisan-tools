@@ -4,9 +4,16 @@ import { FC, ReactNode, useState } from 'react'
 interface IProps {
   children: ReactNode
   items: ICatagory[] // 子菜单
+  currentNav: ICatagory['key']
+  onNavItemClicked: (key: ICatagory['key']) => void
 }
 
-const Menu: FC<IProps> = ({ children, items }) => {
+const Menu: FC<IProps> = ({
+  children,
+  items,
+  currentNav,
+  onNavItemClicked,
+}) => {
   const [isOpened, setIsOpened] = useState(false)
 
   return (
@@ -33,8 +40,12 @@ const Menu: FC<IProps> = ({ children, items }) => {
       {isOpened ? (
         <ul className="mx-4 pl-2 border-l text-sm font-medium">
           {items.map((item, idx) => (
-            <li key={idx}>
-              <span className="flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 hover:text-sky-500 hover:cursor-pointer active:bg-gray-100 duration-150">
+            <li key={idx} onClick={() => onNavItemClicked(item.key)}>
+              <span
+                className={`flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 hover:text-sky-500 hover:cursor-pointer active:bg-gray-100 duration-150 ${
+                  item.key === currentNav ? 'bg-gray-50 text-sky-500' : ''
+                }`}
+              >
                 {item.title}
               </span>
             </li>

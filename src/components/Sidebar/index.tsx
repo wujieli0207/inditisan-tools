@@ -11,7 +11,12 @@ interface IProps {
   onNavItemClicked: (key: ICatagory['key']) => void
 }
 
-const Sidebar: FC<IProps> = ({ children, navigation }) => {
+const Sidebar: FC<IProps> = ({
+  children,
+  navigation,
+  currentNav,
+  onNavItemClicked,
+}) => {
   return (
     <>
       <div className="drawer lg:drawer-open w-full h-full overflow-auto">
@@ -26,8 +31,9 @@ const Sidebar: FC<IProps> = ({ children, navigation }) => {
             htmlFor="sidebar-drawer"
             aria-label="close sidebar"
             className="drawer-overlay"
-          ></label>
-          <nav className="w-52 h-full border-r bg-white space-y-8 p-2">
+          />
+
+          <nav className="w-52 h-full border-r bg-white space-y-8 px-2">
             <div className="flex flex-col h-full">
               {/* logo */}
               <div className="h-12 flex items-center justify-center mb-2">
@@ -48,7 +54,11 @@ const Sidebar: FC<IProps> = ({ children, navigation }) => {
                     if (item.children) {
                       return (
                         <li key={idx}>
-                          <Menu items={item.children}>
+                          <Menu
+                            items={item.children}
+                            currentNav={currentNav}
+                            onNavItemClicked={onNavItemClicked}
+                          >
                             <span>
                               {item.icon && <Icon componentName={item.icon} />}
                             </span>
@@ -58,8 +68,17 @@ const Sidebar: FC<IProps> = ({ children, navigation }) => {
                       )
                     } else {
                       return (
-                        <li key={idx}>
-                          <span className="flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 active:bg-gray-100 duration-150">
+                        <li
+                          key={idx}
+                          onClick={() => onNavItemClicked(item.key)}
+                        >
+                          <span
+                            className={`flex items-center gap-x-2 text-gray-600 p-2 rounded-lg  hover:bg-gray-50 active:bg-gray-100 duration-150 ${
+                              item.key === currentNav
+                                ? 'bg-gray-50 text-sky-500'
+                                : ''
+                            }`}
+                          >
                             {item.title}
                           </span>
                         </li>
