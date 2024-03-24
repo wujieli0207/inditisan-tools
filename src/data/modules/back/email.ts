@@ -1,7 +1,7 @@
 import { ICatagory } from '@/types/data'
 
-const backFramework: ICatagory = {
-  key: 'backFramework',
+const email: ICatagory = {
+  key: 'email',
   title: '邮件服务',
   cards: [
     {
@@ -13,4 +13,4 @@ const backFramework: ICatagory = {
   ],
 }
 
-export default backFramework
+export default email

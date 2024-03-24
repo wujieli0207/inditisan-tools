@@ -48,7 +48,7 @@ const Navbar = () => {
   // }
 
   return (
-    <nav className="">
+    <nav className="z-20">
       {/* toggle sidebar */}
       <div className="p-1 text-sm text-gray-700 duration-100  fixed top-[50%] -left-2 bg-white shadow-md rounded-lg hover:bg-gray-200  lg:hidden">
         <label htmlFor="sidebar-drawer">
