@@ -11,6 +11,12 @@ const information: ICatagory = {
       description: '新产品发布榜单',
     },
     {
+      title: '产品沉思录',
+      url: 'https://pmthinking.com/',
+      icon: 'https://icon.horse/icon/pmthinking.com',
+      description: '于产品的知识库，涵盖几十个人物/产品/公司专题研究',
+    },
+    {
       title: '独立开发前线',
       url: 'https://www.91wink.com/',
       icon: 'https://icon.horse/icon/91wink.com',
