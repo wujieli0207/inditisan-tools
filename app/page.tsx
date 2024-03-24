@@ -1,11 +1,11 @@
 'use client'
 
 import { siteConfig } from '@/config/site'
-import Catagory from '@/src/components/Catagory'
-import Empty from '@/src/components/Empty'
-import Navbar from '@/src/components/Navbar'
-import Sidebar from '@/src/components/Sidebar'
-import data from '@/src/data'
+import Catagory from '@/components/Catagory'
+import Empty from '@/components/Empty'
+import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
+import data from '@/data'
 import { handleSearch } from '@/utils/search'
 import { useRef, useState } from 'react'
 
