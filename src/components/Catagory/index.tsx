@@ -11,7 +11,7 @@ const Catagory: FC<IProps> = ({ catagory }) => {
   const { title, cards: cardList } = catagory
 
   return (
-    <section className="max-w-screen-xl px-4 mx-auto my-4 md:px-8">
+    <section className="max-w-screen-xl px-8 mx-auto my-4 md:px-8">
       <div className="flex flex-col mb-12">
         <h2 className="text-2xl font-bold text-black">{title}</h2>
 

@@ -12,7 +12,7 @@ export type SiteConfig = {
   ogImage: string
   links: {
     twitter: string
-    github?: string
+    github: string
   }
   metadataBase: URL
   themeColor: string

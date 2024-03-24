@@ -3,6 +3,9 @@ import Menu from './Menu'
 import { IconBulb } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 import Icon from './Icon'
+import { IconBrandGithub, IconBrandTwitter } from '@tabler/icons-react'
+import Link from 'next/link'
+import { siteConfig } from '@/config/site'
 
 interface IProps {
   children: ReactNode
@@ -33,7 +36,7 @@ const Sidebar: FC<IProps> = ({
             className="drawer-overlay"
           />
 
-          <nav className="w-52 h-full border-r bg-white space-y-8 px-2">
+          <nav className="w-52 h-full border-r bg-white space-y-8 px-2 flex flex-col justify-between items-center">
             <div className="flex flex-col h-full">
               {/* logo */}
               <div className="h-12 flex items-center justify-center mb-2">
@@ -87,6 +90,23 @@ const Sidebar: FC<IProps> = ({
                   })}
                 </ul>
               </div>
+            </div>
+
+            {/* 底部链接 */}
+            <div>
+              {/* github */}
+              <Link href={siteConfig.links.github} target="_blank">
+                <button className="my-2 mx-1 mr-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100">
+                  <IconBrandGithub width={18} height={18} />
+                </button>
+              </Link>
+
+              {/* twitter */}
+              <Link href={siteConfig.links.twitter} target="_blank">
+                <button className="my-2 mx-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100">
+                  <IconBrandTwitter width={18} height={18} />
+                </button>
+              </Link>
             </div>
           </nav>
         </div>
