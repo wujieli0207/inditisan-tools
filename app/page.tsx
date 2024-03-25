@@ -16,6 +16,7 @@ export default function Home() {
     data[0].children && data[0].children[0] ? data[0].children[0].key : ''
   )
   const [filterData, setFilterData] = useState(data)
+
   const categoryRefs = useRef<Record<string, HTMLDivElement>>({})
 
   const handleNavItemClick = (key: string) => {
@@ -44,7 +45,7 @@ export default function Home() {
         currentNav={currentNav}
         onNavItemClicked={handleNavItemClick}
       >
-        <div className="flex flex-col w-full items-center mt-32">
+        <div className="flex flex-col w-full h-full items-center mt-32">
           {/* landing page */}
           <div className="text-center space-y-4 px-8">
             <h1 className="text-gray-800 font-bold text-3xl sm:text-4xl md:text-5xl">
@@ -81,7 +82,7 @@ export default function Home() {
 
           {/* 具体导航 */}
           {filterData.length > 0 ? (
-            <div className="overflow-auto mt-16">
+            <div className="mt-16">
               {filterData.map((item) => {
                 return (
                   <div key={item.key}>

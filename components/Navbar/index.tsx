@@ -1,8 +1,8 @@
 import {
-  IconBrandGithub,
+  IconArrowNarrowUp,
   IconLayoutSidebarLeftExpand,
 } from '@tabler/icons-react'
-import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 const Navbar = () => {
   // const [theme, setTheme] = useState('light')

@@ -1,11 +1,10 @@
-import { FC, ReactNode } from 'react'
+import { FC, ReactNode, Ref, useEffect, useRef, useState } from 'react'
 import Menu from './Menu'
-import { IconBulb } from '@tabler/icons-react'
+import { IconArrowNarrowUp, IconBulb } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 import Icon from './Icon'
-import { IconBrandGithub, IconBrandTwitter } from '@tabler/icons-react'
-import Link from 'next/link'
-import { siteConfig } from '@/config/site'
+import { useScroll } from 'ahooks'
+import BottomLink from './BottomLink'
 
 interface IProps {
   children: ReactNode
@@ -20,14 +19,46 @@ const Sidebar: FC<IProps> = ({
   currentNav,
   onNavItemClicked,
 }) => {
+  const mainRef = useRef<HTMLDivElement>(null)
+  const scroll = useScroll(mainRef)
+
+  const [showScroll, setShowScroll] = useState(false)
+
+  // 监听窗口滚动事件
+  useEffect(() => {
+    if (scroll && scroll?.top > 300) {
+      setShowScroll(true)
+    } else {
+      setShowScroll(false)
+    }
+  }, [scroll])
+
+  // 点击按钮滚动到顶部的处理函数
+  const scrollToTop = () => {
+    mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <>
       <div className="drawer lg:drawer-open w-full h-full overflow-auto">
         <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center">
+        <div
+          ref={mainRef}
+          className="drawer-content overflow-auto flex flex-col items-center justify-center"
+        >
           {/* Page content here */}
           {children}
         </div>
+
+        {/* 回到顶部 */}
+        {showScroll && (
+          <button
+            className="fixed right-3 bottom-3 p-1 text-indigo-600 duration-150 bg-indigo-50 rounded-lg hover:bg-indigo-100 active:bg-indigo-200"
+            onClick={() => scrollToTop()}
+          >
+            <IconArrowNarrowUp />
+          </button>
+        )}
 
         <div className="drawer-side">
           <label
@@ -93,21 +124,7 @@ const Sidebar: FC<IProps> = ({
             </div>
 
             {/* 底部链接 */}
-            <div>
-              {/* github */}
-              <Link href={siteConfig.links.github} target="_blank">
-                <button className="my-2 mx-1 mr-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100">
-                  <IconBrandGithub width={18} height={18} />
-                </button>
-              </Link>
-
-              {/* twitter */}
-              <Link href={siteConfig.links.twitter} target="_blank">
-                <button className="my-2 mx-1 p-2 text-sm text-gray-700 duration-100 rounded hover:bg-gray-100">
-                  <IconBrandTwitter width={18} height={18} />
-                </button>
-              </Link>
-            </div>
+            <BottomLink />
           </nav>
         </div>
       </div>
