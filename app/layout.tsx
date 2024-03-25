@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: siteConfig.authors,
   creator: siteConfig.creator,
+  metadataBase: siteConfig.metadataBase,
+  icons: siteConfig.icons,
   openGraph: siteConfig.openGraph,
+  twitter: siteConfig.twitter,
 }
 
 export default function RootLayout({

@@ -6,9 +6,9 @@ const icon: ICatagory = {
   cards: [
     {
       title: 'iconce',
-      url: 'https://iconce.com/',
-      icon: 'https://icon.horse/icon/iconce.com',
-      description: '可以用来设计app图标',
+      url: 'https://icon.ray.so/',
+      icon: 'https://icon.horse/icon/icon.ray.so',
+      description: 'Raycast 推出的图标设计工具',
     },
     {
       title: 'Icon Horse',
@@ -20,13 +20,13 @@ const icon: ICatagory = {
       title: 'iconify',
       url: 'https://iconify.design/',
       icon: 'https://icon.horse/icon/iconify.design',
-      description: '获取网站的 favicon',
+      description: '超过 20 万个免费图标',
     },
     {
       title: 'tabler icon',
       url: 'https://tabler.io/icons',
       icon: 'https://icon.horse/icon/tabler.io/icons',
-      description: '获取网站的 favicon',
+      description: '超过 5000 个免费图标',
     },
   ],
 }
