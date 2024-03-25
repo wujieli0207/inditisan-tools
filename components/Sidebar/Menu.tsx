@@ -14,14 +14,17 @@ const Menu: FC<IProps> = ({
   currentNav,
   onNavItemClicked,
 }) => {
-  const [isOpened, setIsOpened] = useState(
-    items.some((item) => item.key === currentNav)
-  )
+  // const [isOpened, setIsOpened] = useState(
+  //   items.some((item) => item.key === currentNav)
+  // )
+  const [isOpened, setIsOpened] = useState(true)
 
   useEffect(() => {
-    // 每当currentNav变化时，检查是否需要展开或收起菜单
-    setIsOpened(items.some((item) => item.key === currentNav))
-  }, [currentNav, items])
+    // 如果一级菜单没有展开, currentNav 变化时，检查是否需要展开或收起菜单
+    if (!isOpened) {
+      setIsOpened(items.some((item) => item.key === currentNav))
+    }
+  }, [isOpened, currentNav, items])
 
   return (
     <>
