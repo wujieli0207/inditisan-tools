@@ -3,13 +3,14 @@ import Menu from './Menu'
 import { IconArrowNarrowUp, IconBulb } from '@tabler/icons-react'
 import { ICatagory } from '@/types/data'
 import Icon from './Icon'
-import { useScroll } from 'ahooks'
+import { useHover, useScroll } from 'ahooks'
 import BottomLink from './BottomLink'
 
 interface IProps {
   children: ReactNode
   navigation: ICatagory[]
   currentNav: ICatagory['key']
+  setIsNavClick: (is: boolean) => void // 是否在侧边栏点击
   onNavItemClicked: (key: ICatagory['key']) => void
 }
 
@@ -17,10 +18,13 @@ const Sidebar: FC<IProps> = ({
   children,
   navigation,
   currentNav,
+  setIsNavClick,
   onNavItemClicked,
 }) => {
   const mainRef = useRef<HTMLDivElement>(null)
+
   const scroll = useScroll(mainRef)
+  const isMainHoving = useHover(mainRef)
 
   const [showScroll, setShowScroll] = useState(false)
 
@@ -31,7 +35,16 @@ const Sidebar: FC<IProps> = ({
     } else {
       setShowScroll(false)
     }
-  }, [scroll])
+  }, [scroll, setIsNavClick])
+
+  useEffect(() => {
+    // 如果鼠标在内容页面内，此时不是点击 sidebar 的滚动事件
+    if (isMainHoving) {
+      setTimeout(() => {
+        setIsNavClick(false)
+      }, 1 * 1000)
+    }
+  }, [isMainHoving, setIsNavClick])
 
   // 点击按钮滚动到顶部的处理函数
   const scrollToTop = () => {
