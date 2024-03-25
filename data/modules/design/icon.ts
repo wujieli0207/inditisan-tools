@@ -5,7 +5,7 @@ const icon: ICatagory = {
   title: '图标',
   cards: [
     {
-      title: 'iconce',
+      title: 'Icon Ray',
       url: 'https://icon.ray.so/',
       icon: 'https://icon.horse/icon/icon.ray.so',
       description: 'Raycast 推出的图标设计工具',
