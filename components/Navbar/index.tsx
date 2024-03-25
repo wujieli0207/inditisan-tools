@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <nav className="z-20">
       {/* toggle sidebar */}
-      <div className="p-1 text-sm text-gray-700 duration-100  fixed top-[50%] -left-2 bg-white shadow-md rounded-lg hover:bg-gray-200  lg:hidden">
+      <div className="p-1 text-sm text-indigo-600 duration-100  fixed top-[50%] -left-2 bg-white shadow-md rounded-lg hover:bg-indigo-50  lg:hidden">
         <label htmlFor="sidebar-drawer">
           <IconLayoutSidebarLeftExpand width={18} height={18} />
         </label>
