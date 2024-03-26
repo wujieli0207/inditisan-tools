@@ -2,7 +2,7 @@ import { ICatagory } from '@/types/data'
 
 const backFramework: ICatagory = {
   key: 'backFramework',
-  title: '服务端开发框架',
+  title: '开发框架',
   cards: [
     {
       title: 'NestJS',
