@@ -10,18 +10,6 @@ const backFramework: ICatagory = {
       icon: 'https://icon.horse/icon/nestjs.com',
       description: '',
     },
-    {
-      title: 'supabase',
-      url: 'https://supabase.com/',
-      icon: 'https://icon.horse/icon/supabase.com',
-      description: '',
-    },
-    {
-      title: 'MemFire Cloud',
-      url: 'https://memfiredb.com/',
-      icon: 'https://icon.horse/icon/memfiredb.com',
-      description: 'supabase 的国产替代',
-    },
   ],
 }
 
