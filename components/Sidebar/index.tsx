@@ -53,7 +53,7 @@ const Sidebar: FC<IProps> = ({
 
   return (
     <>
-      <div className="drawer lg:drawer-open w-full h-full overflow-auto">
+      <div className="drawer lg:drawer-open w-full h-full">
         <input id="sidebar-drawer" type="checkbox" className="drawer-toggle" />
         <div
           ref={mainRef}
@@ -137,7 +137,7 @@ const Sidebar: FC<IProps> = ({
             </div>
 
             {/* 底部链接 */}
-            <BottomLink />
+            <BottomLink className="fixed bottom-0 left-0 right-0" />
           </nav>
         </div>
       </div>
