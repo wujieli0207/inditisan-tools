@@ -22,6 +22,12 @@ const template: ICatagory = {
       icon: 'https://icon.horse/icon/tailwindawesome.com',
       description: '质量很高的 Tailwind 模板库，收费和免费都有',
     },
+    {
+      title: 'themeforest',
+      url: 'https://themeforest.net/',
+      icon: 'https://icon.horse/icon/themeforest.net',
+      description: '非常齐全的模板库，除了代码之外还有图像、3D 模型等',
+    },
   ],
 }
 
