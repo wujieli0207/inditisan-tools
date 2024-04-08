@@ -6,6 +6,7 @@ import {
   IconServer,
   IconDeviceDesktopAnalytics,
   IconCloud,
+  IconSun,
 } from '@tabler/icons-react'
 
 const components = {
@@ -15,6 +16,7 @@ const components = {
   IconServer,
   IconDeviceDesktopAnalytics,
   IconCloud,
+  IconSun,
 }
 
 interface IProps {
