@@ -22,6 +22,12 @@ const information: ICatagory = {
       icon: 'https://icon.horse/icon/91wink.com',
       description: '独立开发者的成长指南',
     },
+    {
+      title: 'BoringCashCow',
+      url: 'https://boringcashcow.com/',
+      icon: 'https://icon.horse/icon/boringcashcow.com',
+      description: 'Discover Boring Businesses that Quietly Rake in the Cash',
+    },
   ],
 }
 
