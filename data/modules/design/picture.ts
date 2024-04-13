@@ -16,6 +16,12 @@ const picture: ICatagory = {
       icon: 'https://icon.horse/icon/stockcake.com',
       description: 'AI 生成的免费图像素材网站',
     },
+    {
+      title: 'tinyimg',
+      url: 'https://www.zhangxinxu.com/sp/tinyimg/',
+      icon: 'https://icon.horse/icon/zhangxinxu.com',
+      description: '简易在线尺寸缩放与压缩工具，简单好用',
+    },
   ],
 }
 
