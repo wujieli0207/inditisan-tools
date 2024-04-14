@@ -11,6 +11,12 @@ const information: ICatagory = {
       description: '新产品发布榜单',
     },
     {
+      title: 'INDIE HACKERS',
+      url: 'https://www.indiehackers.com/',
+      icon: 'https://icon.horse/icon/indiehackers.com',
+      description: 'Work Together to Build Profitable Online Businesses',
+    },
+    {
       title: '产品沉思录',
       url: 'https://pmthinking.com/',
       icon: 'https://icon.horse/icon/pmthinking.com',
