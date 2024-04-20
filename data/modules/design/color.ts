@@ -34,6 +34,12 @@ const color: ICatagory = {
       icon: 'https://icon.horse/icon/coolors.co',
       description: '另一个调色板工具',
     },
+    {
+      title: '配色卡',
+      url: 'https://peiseka.com/',
+      icon: 'https://icon.horse/icon/peiseka.com',
+      description: '简单好用的配色网站，专注于配色色彩领域',
+    },
   ],
 }
 
