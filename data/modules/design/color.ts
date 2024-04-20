@@ -30,8 +30,8 @@ const color: ICatagory = {
     },
     {
       title: 'coolors',
-      url: 'https://colorhunt.co/',
-      icon: 'https://icon.horse/icon/colorhunt.co',
+      url: 'https://coolors.co/',
+      icon: 'https://icon.horse/icon/coolors.co',
       description: '另一个调色板工具',
     },
   ],
