@@ -10,6 +10,12 @@ const fellow: ICatagory = {
       icon: 'https://icon.horse/icon/cali.so',
       description: '佐玩创始人',
     },
+    {
+      title: '吕立青',
+      url: 'https://blog.jimmylv.info/',
+      icon: 'https://icon.horse/icon/blog.jimmylv.info',
+      description: '想做产品，却误入程序世界爱上写作的摄影师',
+    },
   ],
 }
 
