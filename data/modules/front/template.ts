@@ -28,6 +28,12 @@ const template: ICatagory = {
       icon: 'https://icon.horse/icon/themeforest.net',
       description: '非常齐全的模板库，除了代码之外还有图像、3D 模型等',
     },
+    {
+      title: 'uiverse',
+      url: 'https://uiverse.io/',
+      icon: 'https://icon.horse/icon/uiverse.io',
+      description: 'Open-Source UI elements for any project',
+    },
   ],
 }
 
