@@ -34,6 +34,12 @@ const template: ICatagory = {
       icon: 'https://icon.horse/icon/uiverse.io',
       description: 'Open-Source UI elements for any project',
     },
+    {
+      title: 'HTMLrev',
+      url: 'https://htmlrev.com/',
+      icon: 'https://icon.horse/icon/htmlrev.com',
+      description: '1500+ free HTML templates',
+    },
   ],
 }
 
