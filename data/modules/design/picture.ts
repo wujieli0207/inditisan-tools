@@ -17,6 +17,12 @@ const picture: ICatagory = {
       description: 'AI 生成的免费图像素材网站',
     },
     {
+      title: 'Hand Drawn AI',
+      url: 'https://handdrawn.ai/',
+      icon: 'https://icon.horse/icon/handdrawn.ai',
+      description: 'AI 生成手绘图网站',
+    },
+    {
       title: 'tinyimg',
       url: 'https://www.zhangxinxu.com/sp/tinyimg/',
       icon: 'https://icon.horse/icon/zhangxinxu.com',
